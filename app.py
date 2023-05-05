@@ -2,12 +2,12 @@
 
 import aws_cdk as cdk
 
-from python_cdk_boilerplate.python_cdk_boilerplate_stack import PythonCdkBoilerplateStack
+from langchain_ecs_boilerplate.langchain_ecs_boilerplate_stack import LangchainEcsBoilerplateStack
 
 app = cdk.App()
-PythonCdkBoilerplateStack(
-    app, "PythonCdkBoilerplateStack",
-    # env=cdk.Environment(region='us-east-2')
+LangchainEcsBoilerplateStack(
+    app, "LangchainEcsBoilerplateStack",
+    env=cdk.Environment(region='us-east-2')
 )
 
 app.synth()

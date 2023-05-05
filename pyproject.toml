@@ -1,16 +1,22 @@
 [tool.poetry]
-name = "python-cdk-boilerplate"
+name = "langchain-ecs-boilerplate"
 version = "0.1.0"
 description = ""
 authors = ["ysato <56924527+ysato@users.noreply.github.com>"]
 readme = "README.md"
-packages = [{ include = "python_cdk_boilerplate" }]
+packages = [{ include = "langchain_ecs_boilerplate" }]
 
 [tool.poetry.dependencies]
 python = "^3.9"
 slack-bolt = "^1.18.0"
 flask = "^2.3.2"
 python-dotenv = "^1.0.0"
+langchain = "0.0.150"
+openai = "^0.27.6"
+tiktoken = "^0.3.3"
+unstructured = "0.6.1"
+boto3 = "^1.26.127"
+faiss-cpu = "^1.7.4"
 
 
 [tool.poetry.group.dev.dependencies]
